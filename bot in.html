@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogares Felices México</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #00897b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #00695c;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #00796b;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #004d40;
+      color: white;
+      margin-top: 2rem;
+    }
+    .botpress-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hogares Felices México</h1>
+    <p>Tu hogar ideal empieza aquí</p>
+  </header>
+
+  <nav>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#valores">Valores</a>
+  </nav>
+
+  <section id="mision">
+    <h2>Misión</h2>
+    <p>Brindar soluciones inmobiliarias integrales con ética, profesionalismo y calidez, asegurando la satisfacción de nuestros clientes a través de servicios personalizados que faciliten la compra, venta, renta y administración de propiedades.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <p>Ser la inmobiliaria líder en México en ofrecer experiencias felices y confiables para cada familia o inversionista que busca su próximo hogar o proyecto inmobiliario.</p>
+  </section>
+
+  <section id="valores">
+    <h2>Valores</h2>
+    <ul>
+      <li><strong>Confianza:</strong> Actuamos con transparencia y responsabilidad.</li>
+      <li><strong>Compromiso:</strong> Nos enfocamos en cumplir y superar las expectativas.</li>
+      <li><strong>Empatía:</strong> Escuchamos y entendemos las necesidades de cada cliente.</li>
+      <li><strong>Excelencia:</strong> Buscamos mejorar continuamente nuestros procesos y servicios.</li>
+      <li><strong>Pasión:</strong> Amamos lo que hacemos y lo reflejamos en cada interacción.</li>
+    </ul>
+  </section>
+
+  <!-- Botpress embebido -->
+  <div class="botpress-container">
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/05/29/03/20250529033539-D0JL7LUJ.js" defer></script>
+    <script>
+      window.botpressWebChat.init({
+        composerPlaceholder: "¿En qué puedo ayudarte hoy?",
+        botConversationDescription: "Asistente virtual de Hogares Felices México",
+        botId: "hogaresfelices-bot-id", // Reemplaza con tu botId real
+        clientId: "hogaresfelices-bot-id", // Reemplaza con tu clientId real
+        hostUrl: "https://cdn.botpress.cloud/webchat/v3.0",
+        messagingUrl: "https://messaging.botpress.cloud",
+        showPoweredBy: false,
+        botName: "HogarBot",
+        avatarUrl: "https://cdn-icons-png.flaticon.com/512/619/619034.png",
+        layoutWidth: "400px",
+        openByDefault: true,
+        enableTranscriptDownload: true,
+        enableConversationDeletion: true,
+        enableReset: true,
+        themeName: "prism",
+        theme: {
+          primaryColor: "#00796b",
+          backgroundColor: "#ffffff",
+          textColorOnDark: "#ffffff"
+        }
+      });
+    </script>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hogares Felices México. Todos los derechos reservados.</p>
+    <p>Contacto: info@hogaresfelices.mx | Tel: +52 33 1234 5678</p>
+  </footer>
+</body>
+</html>
