@@ -4,50 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hogares Felices México</title>
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #00897b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #00695c;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      margin-top: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #00796b;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #004d40;
-      color: white;
-      margin-top: 2rem;
-    }
+    /* Estilos personalizados para el contenedor de Botpress para asegurar la posición fija */
     .botpress-container {
       position: fixed;
       bottom: 20px;
@@ -56,31 +18,36 @@
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Hogares Felices México</h1>
-    <p>Tu hogar ideal empieza aquí</p>
+<body class="font-inter bg-gray-50 text-gray-800">
+  <!-- Encabezado de la página -->
+  <header class="bg-teal-700 text-white py-8 text-center rounded-b-xl shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">Hogares Felices México</h1>
+    <p class="text-xl md:text-2xl font-light">Tu hogar ideal empieza aquí</p>
   </header>
 
-  <nav>
-    <a href="#mision">Misión</a>
-    <a href="#vision">Visión</a>
-    <a href="#valores">Valores</a>
+  <!-- Barra de navegación -->
+  <nav class="bg-teal-800 flex flex-col md:flex-row justify-center gap-4 p-4 shadow-md">
+    <a href="#mision" class="text-white hover:text-teal-200 font-semibold text-lg transition duration-300 ease-in-out px-4 py-2 rounded-md hover:bg-teal-700">Misión</a>
+    <a href="#vision" class="text-white hover:text-teal-200 font-semibold text-lg transition duration-300 ease-in-out px-4 py-2 rounded-md hover:bg-teal-700">Visión</a>
+    <a href="#valores" class="text-white hover:text-teal-200 font-semibold text-lg transition duration-300 ease-in-out px-4 py-2 rounded-md hover:bg-teal-700">Valores</a>
   </nav>
 
-  <section id="mision">
-    <h2>Misión</h2>
-    <p>Brindar soluciones inmobiliarias integrales con ética, profesionalismo y calidez, asegurando la satisfacción de nuestros clientes a través de servicios personalizados que faciliten la compra, venta, renta y administración de propiedades.</p>
+  <!-- Sección de Misión -->
+  <section id="mision" class="p-6 md:p-8 max-w-4xl mx-auto bg-white mt-8 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.01]">
+    <h2 class="text-3xl font-semibold text-teal-600 mb-4 border-b-2 border-teal-300 pb-2">Misión</h2>
+    <p class="text-gray-700 leading-relaxed">Brindar soluciones inmobiliarias integrales con ética, profesionalismo y calidez, asegurando la satisfacción de nuestros clientes a través de servicios personalizados que faciliten la compra, venta, renta y administración de propiedades.</p>
   </section>
 
-  <section id="vision">
-    <h2>Visión</h2>
-    <p>Ser la inmobiliaria líder en México en ofrecer experiencias felices y confiables para cada familia o inversionista que busca su próximo hogar o proyecto inmobiliario.</p>
+  <!-- Sección de Visión -->
+  <section id="vision" class="p-6 md:p-8 max-w-4xl mx-auto bg-white mt-8 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.01]">
+    <h2 class="text-3xl font-semibold text-teal-600 mb-4 border-b-2 border-teal-300 pb-2">Visión</h2>
+    <p class="text-gray-700 leading-relaxed">Ser la inmobiliaria líder en México en ofrecer experiencias felices y confiables para cada familia o inversionista que busca su próximo hogar o proyecto inmobiliario.</p>
   </section>
 
-  <section id="valores">
-    <h2>Valores</h2>
-    <ul>
+  <!-- Sección de Valores -->
+  <section id="valores" class="p-6 md:p-8 max-w-4xl mx-auto bg-white mt-8 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.01]">
+    <h2 class="text-3xl font-semibold text-teal-600 mb-4 border-b-2 border-teal-300 pb-2">Valores</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
       <li><strong>Confianza:</strong> Actuamos con transparencia y responsabilidad.</li>
       <li><strong>Compromiso:</strong> Nos enfocamos en cumplir y superar las expectativas.</li>
       <li><strong>Empatía:</strong> Escuchamos y entendemos las necesidades de cada cliente.</li>
@@ -91,37 +58,58 @@
 
   <!-- Botpress embebido -->
   <div class="botpress-container">
+    <!-- Scripts de Botpress -->
     <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
-    <script src="https://files.bpcontent.cloud/2025/05/29/03/20250529033539-D0JL7LUJ.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/06/28/15/20250628151042-2M0BYAYF.js" defer></script>
     <script>
-      window.botpressWebChat.init({
-        composerPlaceholder: "¿En qué puedo ayudarte hoy?",
-        botConversationDescription: "Asistente virtual de Hogares Felices México",
-        botId: "hogaresfelices-bot-id", // Reemplaza con tu botId real
-        clientId: "hogaresfelices-bot-id", // Reemplaza con tu clientId real
-        hostUrl: "https://cdn.botpress.cloud/webchat/v3.0",
-        messagingUrl: "https://messaging.botpress.cloud",
-        showPoweredBy: false,
-        botName: "HogarBot",
-        avatarUrl: "https://cdn-icons-png.flaticon.com/512/619/619034.png",
-        layoutWidth: "400px",
-        openByDefault: true,
-        enableTranscriptDownload: true,
-        enableConversationDeletion: true,
-        enableReset: true,
-        themeName: "prism",
-        theme: {
-          primaryColor: "#00796b",
-          backgroundColor: "#ffffff",
-          textColorOnDark: "#ffffff"
-        }
+      // Asegurarse de que Botpress WebChat esté cargado antes de inicializar
+      window.addEventListener('load', function() {
+        const maxRetries = 50; // Intenta hasta por 5 segundos (50 * 100ms)
+        let retryCount = 0;
+        let intervalId = setInterval(() => {
+          // Verifica si window.botpressWebChat y su método init están definidos
+          if (window.botpressWebChat && typeof window.botpressWebChat.init === 'function') {
+            clearInterval(intervalId); // Detiene el intervalo una vez que se encuentra
+            window.botpressWebChat.init({
+              composerPlaceholder: "¿En qué puedo ayudarte hoy?", // Texto del placeholder del compositor
+              botConversationDescription: "Asistente virtual de Hogares Felices México", // Descripción del bot
+              // Usamos el botId y clientId directamente de la URL del script de Botpress
+              botId: "2M0BYAYF",
+              clientId: "2M0BYAYF",
+              hostUrl: "https://cdn.botpress.cloud/webchat/v3.0", // URL del host del webchat
+              messagingUrl: "https://messaging.botpress.cloud", // URL de mensajería
+              showPoweredBy: false, // Oculta la marca "Powered by Botpress"
+              botName: "HogarBot", // Nombre del bot
+              avatarUrl: "https://cdn-icons-png.flaticon.com/512/619/619034.png", // URL del avatar del bot
+              layoutWidth: "400px", // Ancho del layout del chat
+              openByDefault: true, // Abre el chat por defecto
+              enableTranscriptDownload: true, // Habilita la descarga de la transcripción
+              enableConversationDeletion: true, // Habilita la eliminación de la conversación
+              enableReset: true, // Habilita el reinicio de la conversación
+              themeName: "prism", // Tema del chat
+              theme: {
+                primaryColor: "#00796b", // Color primario del tema
+                backgroundColor: "#ffffff", // Color de fondo del tema
+                textColorOnDark: "#ffffff" // Color del texto en fondos oscuros
+              }
+            });
+            console.log("Botpress WebChat inicializado con éxito.");
+          } else {
+            retryCount++;
+            if (retryCount >= maxRetries) {
+              clearInterval(intervalId);
+              console.error("Botpress WebChat no se cargó después de múltiples reintentos. Por favor, verifica los scripts de Botpress y la configuración de Bot ID/Client ID.");
+            }
+          }
+        }, 100); // Intenta cada 100ms
       });
     </script>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Hogares Felices México. Todos los derechos reservados.</p>
-    <p>Contacto: info@hogaresfelices.mx | Tel: +52 33 1234 5678</p>
+  <!-- Pie de página -->
+  <footer class="text-center p-8 bg-teal-900 text-white mt-12 rounded-t-xl shadow-lg">
+    <p class="text-lg mb-2">&copy; 2025 Hogares Felices México. Todos los derechos reservados.</p>
+    <p class="text-md">Contacto: info@hogaresfelices.mx | Tel: +52 33 1234 5678</p>
   </footer>
 </body>
 </html>
